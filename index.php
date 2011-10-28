@@ -10,7 +10,7 @@
     </head>
     <body class="body">
         <div style="position:absolute;top:1px;width:100%;height:20px;"><?
-require_once("init.php");
+require_once("nav.php");
  ?></div>
         <div class="body_content">
             <div class="content">
