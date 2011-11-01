@@ -76,6 +76,8 @@ h1 h2 h3 h4{
 /*=== top level class tags  start ===*/
 .body{
     background-image:url('../images/bg_images/random_grey_variations.png');
+    color:#333;
+    text-shadow: 0 1px 0 white;
 }
 
 .body_content{

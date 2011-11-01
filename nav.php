@@ -1,10 +1,5 @@
 <?php
-<<<<<<< HEAD
-define(DOC_ROOT,  getenv("DOCUMENT_ROOT"));
-function build_tree($dir="./projects") {
-=======
 function build_tree($dir="projects"){
->>>>>>> 77d64baea62421ae497773dded5cf2713a2d3023
     $excpts_arr = array(".",".." , "nbproject" , ".git" , ".svn");
     // Open a known directory, and proceed to read its contents
     if (is_dir($dir)) {

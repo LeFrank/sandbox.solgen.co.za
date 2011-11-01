@@ -24,11 +24,12 @@
                     <div class="blurb_left_content">
                         Giving jQuery Mobile ago , objective to see whats involved with getting it running and working on iPad and Android device.
                         <br/>Yeah I don't get this yet?
+                        <br/>http://net.tutsplus.com/tutorials/javascript-ajax/how-to-build-an-rss-reader-with-jquery-mobile-2/
                         <br/>Will though.
                     </div>
                     <br/>
                     <span class="img_ref">
-                        <a href="http://jquerymobile.com/" title="image curtousy of jQuery mobille" />http://www.http://jquerymobile.com/</a>
+                        <a href="http://jquerymobile.com/" title="image curtousy of jQuery mobille" target="_blank" />http://jquerymobile.com/</a>
                     </span>
                 </div>
                 <div class="Image_right">
@@ -43,7 +44,7 @@
                         hopefully it will be of value to you.
                         Everything should be in the github repo.
                         Ready to be forked.<br/>.<br/>
-                        Repo details will be added later.
+                        <a href="https://LeFrank@github.com/LeFrank/sandbox.solgen.co.za.git" target="_blank">sandbox.solgen.co.za git</a>
                     </div>
                     <br/>
                     <span class="img_ref">
