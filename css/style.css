@@ -161,4 +161,50 @@ h1 h2 h3 h4{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+.nav{
+    background-color: rgba(0, 0, 0, 0.200);
+    background-image: none;
+    background-size: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topright: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 38px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    width: 980px;
+}
+
+.nav  a
+{
+    text-decoration: none;
+    background-color:#58a1fc;
+    color:#fff;
+    font-weight:700;
+    padding:5px 20px 5px 20px;
+    height:20px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-left:10px;
+    text-shadow: #000 1px 1px 1px;
+}
+
+.nav a:hover
+{
+    text-decoration: none;
+    background-color:#0475f6;
+    color:#fff;
+    font-weight:700;
+    padding:5px 20px 5px 20px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: #000 1px 1px 1px;
+}
+
 /*=== content level tags end ===*/

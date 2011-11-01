@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
     <head>
@@ -9,11 +8,16 @@
         <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     </head>
     <body class="body">
-        <div style="position:absolute;top:1px;width:100%;height:20px;"><?
-require_once("init.php");
- ?></div>
         <div class="body_content">
+            <div class="nav" >
+                <?
+                require_once("nav.php");
+                ?>
+            </div>
             <div class="content">
+                <!--
+                    Open content  Do whatever :)
+                -->
                  <div class="image_post blurb_left">
                     <h3>Mobile test jQuery Mobile</h3>
                     <br/>
@@ -48,6 +52,9 @@ require_once("init.php");
                 <div class="Image_right">
                     <img src="/images/posts/first/happiness_in_life1.jpg" />
                 </div>
+                <!-- 
+                     Close content :)
+                -->
         </div>
         </div>
     </body>
