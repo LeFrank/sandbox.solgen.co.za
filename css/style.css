@@ -17,35 +17,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -63,7 +63,7 @@ h4{
     font-size:14px;
 }
 h1 h2 h3 h4{
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     color:#444444;
     font-weight:700;
     margin-bottom:5px;
@@ -75,7 +75,8 @@ h1 h2 h3 h4{
 
 /*=== top level class tags  start ===*/
 .body{
-    background-image:url('../images/bg_images/random_grey_variations.png');
+    /*background-image:url('../images/bg_images/random_grey_variations.png');*/
+    background-color:#000;
     color:#333;
     text-shadow: 0 1px 0 white;
 }
@@ -113,7 +114,7 @@ h1 h2 h3 h4{
     border-top-left-radius: 5px;
     /*border-top-right-radius: 5px;*/
     clear: both;
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Oswald","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
     height: 280px;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -132,7 +133,7 @@ h1 h2 h3 h4{
 }
 
 .blurb_left h3{
-    
+
 }
 
 .Image_right{
@@ -163,7 +164,7 @@ h1 h2 h3 h4{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
-
+/*
 .nav{
     background-color: rgba(0, 0, 0, 0.200);
     background-image: none;
@@ -207,6 +208,53 @@ h1 h2 h3 h4{
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-shadow: #000 1px 1px 1px;
+}*/
+
+.main_nav{
+    font-family: "Oswald","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    display: block;
+    font-size: 26px;
+    line-height: 40px;
+    position: relative;
+    color: rgb(204, 204, 204) !important;
+    background-color: rgb(68, 68, 68);
+    width:250px;
+    text-indent: 10px;
+    text-decoration: none;
+    -webkit-border-radius: px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+.main_nav:hover{
+    color:rgb(68, 68, 68) !important;
+    background-color:rgb(198, 198, 198);
 }
 
+#main_nav_drop{
+    display:none;
+    float:right;
+    padding-right:10px;
+    cursor:pointer;
+}
+#sub_nav{
+    display:none;
+    font-size: 14px;
+    min-height: 20px;
+    position: relative;
+    width:100%;
+    color: rgb(204, 204, 204) !important;
+    background-color:rgb(198, 198, 198);
+    text-decoration: none;
+    text-indent: 20px;
+}
+#sub_nav a{
+    font-size: 14px;
+    min-height: 20px;
+    position: relative;
+    width:100%;
+    color: rgb(68, 68, 68) !important;
+    background-color:rgb(198, 198, 198);
+    text-decoration: none;
+}
 /*=== content level tags end ===*/
