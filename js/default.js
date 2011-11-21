@@ -11,10 +11,17 @@ $(document).ready(function() {
     });
     $(".main_nav").click(
         function (){
+                $("#"+this.id+" #sub_nav").toggle().attr("inline", "none").html("<a href='/projects/"+this.id+"/index.php' target='content_frame' >"+this.id+" Project home page.</a>");
             //ajax function to get content for now just putting something in to triger frameset activation.
-            $("#"+this.id+" #sub_nav").toggle().attr("inline", "none").html("<a href='/projects/css/index.php' target='content_frame' >CSS Project home page.</a>");
+            $.get("/projects/php/get_folders/index.php?path=/projects/"+this.id
+            ,function(data)
+            {
+//                $("#"+this.id+" #sub_nav").toggle().attr("inline", "none").html(data);
+            }); 
     });
 });
-function show_drop_down(ele){
+//            $("#"+this.id+" #sub_nav").toggle().attr("inline", "none").html("<a href='/projects/css/index.php' target='content_frame' >CSS Project home page.</a>");
+function get_folders(path){
+    
 }
 

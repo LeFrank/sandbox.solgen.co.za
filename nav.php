@@ -6,10 +6,10 @@
         <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
         <link href="http://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet" type="text/css"/>
         <script src="/js/third_party/modernizr-latest.js"></script>
-        <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="/js/third_party/jquery-1.6.4.min.js"></script>
         <script src="/js/default.js"></script>
     </head>
-        <body class="body" style="overflow:hidden;">
+        <body class="body" style="overflow:hidden;width:270px;">
         <div class="body_content">
             <div class="content">
 <?php
