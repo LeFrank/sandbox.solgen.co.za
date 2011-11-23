@@ -31,10 +31,15 @@ function build_tree($dir="projects"){
     return $nar_arr;
 }
 
-$nav = build_tree();
-foreach($nav as $dir_name=>$dir_path) {
-    echo "<div id='".$dir_name."'  class='main_nav'  target ='showframe' >".$dir_name."<span id='main_nav_drop'><img src='/images/bg_images/down.png' /></span><div id='sub_nav'>&nbsp;<br/></div></div><br/>";
+//$nav = build_tree();
+include 'nav_xml.php';
+
+$navigation = new SimpleXMLElement($navigation_xml);
+foreach($navigation->nav->projects->project_category as $item) {
+    $str .= "<div id='".$item->name."'  class='main_nav'  target ='showframe' >".$item->name;
+    $str.= "<span id='main_nav_drop'><img src='/images/bg_images/down.png' /></span><div id='sub_nav'>&nbsp;<br/></div></div><br/>";
 }
+echo $str;
 ?></div>
 </div>
 </body>

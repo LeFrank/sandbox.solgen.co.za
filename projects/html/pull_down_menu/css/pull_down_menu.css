@@ -1,0 +1,46 @@
+div.hover_nav_bar {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    display: block;
+}
+div.hover_nav_bar:hover {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+div.hover_nav_bar div {
+    width: 100%;
+    /*height: 20px;*/
+    font-size: 20px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: left;
+    text-indent: 10px;
+    background: #fff;
+    -webkit-transition: top 1s ease-in-out;
+    -moz-transition: top 1s ease-in-out;
+    -o-transition: top 1s ease-in-out;
+    transition: top 1s ease-in-out;
+}
+div.hover_nav_bar div.hover_nav_bar_header {
+    z-index: 1000;
+}
+
+div.hover_nav_bar_content{
+    display:block;
+}
+
+div.hover_nav_bar:hover div.hover_nav_bar_header {
+    -webkit-transition: top 1s ease-in-out;
+    -moz-transition: top 1s ease-in-out;
+    -o-transition: top 1s ease-in-out;
+    transition: top 1s ease-in-out;
+    top: -50px;
+}
