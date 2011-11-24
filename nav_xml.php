@@ -52,6 +52,10 @@ $navigation_xml = "<?xml version='1.0' standalone='yes'?>
                     <path>/projects/php/get_folders</path>
                 </project>
                 <project>
+                    <name>project crud</name>
+                    <path>/projects/php/project_crud</path>
+                </project>
+                <project>
                     <name>zipper</name>
                     <path>/projects/php/zipper</path>
                 </project>
