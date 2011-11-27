@@ -24,6 +24,7 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
         <!--
             Open content  Do whatever :)
         -->
+        <div style="position:relative;border:solid 2px #ccc;">
 <?php
 include_once  DOC_ROOT.'/nav_xml.php';
 $navigation = new SimpleXMLElement($navigation_xml);
@@ -74,3 +75,6 @@ foreach($navigation->nav->projects->project_category as $item) {
 <br/><br/>
 <input type="submit" value="Create Project" id="project_create" name="project_create" />
 </form>
+</div>
+    </body>
+    </html>

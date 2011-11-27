@@ -24,10 +24,14 @@ div.hover_nav_bar div {
     text-align: left;
     text-indent: 10px;
     background: #fff;
-    -webkit-transition: top 1s ease-in-out;
-    -moz-transition: top 1s ease-in-out;
-    -o-transition: top 1s ease-in-out;
-    transition: top 1s ease-in-out;
+    -webkit-transition: top 1s ease-out;
+    -moz-transition: top 1s ease-out;
+    -o-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    -webkit-transition: top 0s ease-in;
+    -moz-transition: top 0s ease-in;
+    -o-transition: top 0s ease-in;
+    transition: top 0s ease-in;
 }
 div.hover_nav_bar div.hover_nav_bar_header {
     z-index: 1000;
@@ -38,9 +42,9 @@ div.hover_nav_bar_content{
 }
 
 div.hover_nav_bar:hover div.hover_nav_bar_header {
-    -webkit-transition: top 1s ease-in-out;
-    -moz-transition: top 1s ease-in-out;
-    -o-transition: top 1s ease-in-out;
-    transition: top 1s ease-in-out;
+    -webkit-transition: top 1s ease-out;
+    -moz-transition: top 1s ease-out;
+    -o-transition: top 1s ease-out;
+    transition: top 1s ease-out;
     top: -50px;
 }
