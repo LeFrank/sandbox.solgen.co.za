@@ -27,6 +27,10 @@ $navigation_xml = "<?xml version='1.0' standalone='yes'?>
                     <name>pull down menu</name>
                     <path>/projects/html/pull_down_menu</path>
                 </project>
+                <project>
+                    <name>web_sockets</name>
+                    <path>/projects/html/web_sockets</path>
+                </project>
             </project_category>
             <project_category>
                 <name>ide stuff</name>
@@ -35,6 +39,14 @@ $navigation_xml = "<?xml version='1.0' standalone='yes'?>
             <project_category>
                 <name>javascript</name>
                 <path>/projects/javascript</path>
+                <project>
+                    <name>jQuery mobile</name>
+                    <path>/projects/javascript/jquery_mobile</path>
+                </project>
+                <project>
+                    <name>osm</name>
+                    <path>/projects/javascript/osm</path>
+                </project>
             </project_category>
             <project_category>
                 <name>mysql</name>

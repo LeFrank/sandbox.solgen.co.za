@@ -78,8 +78,8 @@ h1 h2 h3 h4{
 .body{
     background-image:url('../images/bg_images/random_grey_variations.png');
     background-color:#000;
-    color:#333;
-    text-shadow: 0 1px 0 white;
+    color:#222;
+    text-shadow: 0 1px 0 #fff;
     font-size:14px;
     font-weight:100;
     width:100%;
@@ -91,11 +91,11 @@ h1 h2 h3 h4{
     min-height:100%;
     padding:10px;
     margin:auto;
-    background-color: rgb(240, 240, 240);
-    background-image: -o-linear-gradient(top, rgb(240, 240, 240), rgb(217, 217, 217));
+    background-color: #fff;
+/*    background-image: -o-linear-gradient(top, #bdd5f1,#fff);
     background-image: -webkit-gradient(top, rgb(240, 240, 240), rgb(217, 217, 217));
     background-image: -moz-linear-gradient(top, rgb(240, 240, 240), rgb(217, 217, 217));
-    background-image: linear-gradient(top, rgb(240, 240, 240), rgb(217, 217, 217));
+    background-image: linear-gradient(top, #bdd5f1,#fff);*/
     font-family:Verdana, sans-serif;
 
 }
