@@ -13,6 +13,7 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
         <link rel="stylesheet" type="text/css" media="all" href="http://<?= $path_to_resources."/css/".$cur_folder.".css" ?>"" />
         <script src="/js/third_party/modernizr-latest.js"></script>
         <script src="/js/third_party/jquery-1.6.4.min.js"></script>
+        <script src="/js/third_party/jquery.masonry.min.js"></script>
     </head>
     <body class="body">
                 <!--
@@ -27,6 +28,15 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
 <br/><br/>
 <br/>
                 Special Chars go away - <code><?= htmlentities('<meta http-equiv="content-type" content="text/html; charset=utf-8">')?></code>
+                <script type="text/javascript" >
+                    $(function(){
+                          $('#nav_container').masonry({
+                            // options
+                            itemSelector : '#nav_cat_item',
+                            columnWidth : 240
+                          });
+                        });
+                </script>
                 <!--
                      Close content :)
                 -->
