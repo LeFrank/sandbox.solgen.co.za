@@ -10,8 +10,24 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>#title </title>
-        <link rel="stylesheet" type="text/css" media="all" href="http://<?= $path_to_resources."/css/".$cur_folder.".css" ?>"" />
+        <link rel="stylesheet" type="text/css" media="all" href="http://<?= $path_to_resources."/css/".$cur_folder.".css" ?>" />
+        <link rel="stylesheet" type="text/css" media="all" href="./css/ui-darkness/jquery-ui-1.8.16.custom.css" />
         <script src="/js/third_party/jquery-1.6.4.min.js"></script>
+        <script src="./js/jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"></script>
+	<style>
+	#demo-frame > div.demo { padding: 10px !important; }
+	</style>
+	<script>
+	$(function() {
+		$( "#slider" ).slider({
+                   slide : alert('asdasd') ,
+                   change: rrr
+                });
+	});
+        function rrr(){
+            alert("3464b46");
+        }
+	</script>
     </head>
     <body class="body">
         <div class="hover_nav_bar">
@@ -26,6 +42,14 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
             Open content  Do whatever :)
         -->
         <?
+        //slider controlls
+        ?>
+<div class="demo">
+
+<div id="slider"></div>
+
+</div><!-- End demo -->
+<?
         $width = "50px";
         $height = "50px";
         for($i =0;$i <= 255;$i++) {

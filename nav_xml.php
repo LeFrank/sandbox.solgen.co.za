@@ -64,6 +64,10 @@ $navigation_xml = "<?xml version='1.0' standalone='yes'?>
                     <path>/projects/php/get_folders</path>
                 </project>
                 <project>
+                    <name>palette renderer</name>
+                    <path>/projects/php/palette_renderer</path>
+                </project>
+                <project>
                     <name>project crud</name>
                     <path>/projects/php/project_crud</path>
                 </project>
