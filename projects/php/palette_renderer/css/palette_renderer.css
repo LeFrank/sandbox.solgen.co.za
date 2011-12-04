@@ -44,3 +44,16 @@ div.hover_nav_bar:hover div.hover_nav_bar_header {
     transition: top 1s ease-in-out;
     top: -50px;
 }
+
+
+.error{
+    background-color:rgb(250, 199, 193);
+    color:rgb(182, 0, 0);
+    margin:10px 0px;
+}
+
+.success{
+    background-color:rgb(184, 232, 179);
+    color:rgb(0, 104, 0);
+    margin:10px 0px;
+}

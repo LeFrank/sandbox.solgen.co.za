@@ -36,6 +36,15 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
                             columnWidth : 240
                           });
                         });
+var frequency = .3;
+for (var i = 0; i < 32; ++i)
+{
+   red   = Math.sin(frequency*i + 0) * 127 + 128;
+   green = Math.sin(frequency*i + 2) * 127 + 128;
+   blue  = Math.sin(frequency*i + 4) * 127 + 128;
+
+   document.write( '<font color="' + RGB2Color(red,green,blue) + '">&#9608;</font>');
+}
                 </script>
                 <!--
                      Close content :)
