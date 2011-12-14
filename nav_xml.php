@@ -40,6 +40,10 @@ $navigation_xml = "<?xml version='1.0' standalone='yes'?>
                 <name>javascript</name>
                 <path>/projects/javascript</path>
                 <project>
+                    <name>Highlight</name>
+                    <path>/projects/javascript/highlight</path>
+                </project>
+                <project>
                     <name>jQuery mobile</name>
                     <path>/projects/javascript/jquery_mobile</path>
                 </project>

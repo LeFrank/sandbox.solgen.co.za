@@ -1,27 +1,21 @@
 div.hover_nav_bar {
     position: absolute;
     width: 100%;
-    height: 25px;
+    height: 20px;
     overflow: hidden;
     display: block;
 }
 div.hover_nav_bar:hover {
     position: absolute;
-    width: 99%;
+    width: 100%;
     height: 200px;
     overflow: hidden;
     z-index: 1000;
-    border-radius:0px 0px 10px 10px;
-    -moz-box-shadow: 5px 5px 5px  #888;
-     -webkit-box-shadow:5px 5px 5px #888;
-     -o-box-shadow: 5px 5px 5px  #888;
-     box-shadow: 5px 5px 5px  #888;
 }
 
 div.hover_nav_bar div {
-    width: 99%;
-    border-radius:0px 0px 10px 10px;
-    /*height: 25px;*/
+    width: 100%;
+    /*height: 20px;*/
     font-size: 20px;
     padding: 0px;
     position: absolute;
@@ -42,29 +36,15 @@ div.hover_nav_bar div {
 div.hover_nav_bar div.hover_nav_bar_header {
     z-index: 1000;
 }
-div.hover_nav_bar_header{
-    border-radius:0px 0px 10px 10px;
-}
 
 div.hover_nav_bar_content{
     display:block;
-        border-radius:0px 0px 10px 10px;
 }
 
 div.hover_nav_bar:hover div.hover_nav_bar_header {
-    border-radius:0px 0px 10px 10px;
     -webkit-transition: top 1s ease-out;
     -moz-transition: top 1s ease-out;
     -o-transition: top 1s ease-out;
     transition: top 1s ease-out;
     top: -50px;
-}
-
-body{
-    background-color:#aaaaaa;
-    margin:0;
-}
-
-#nav_container{
-    background-color:rgb(126, 125, 125);
 }

@@ -11,10 +11,19 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>#title </title>
         <link rel="stylesheet" type="text/css" media="all" href="http://<?= $path_to_resources."/css/".$cur_folder.".css" ?>" />
+        <link rel="stylesheet" type="text/css" media="all" href="http://<?= $path_to_resources."/css/default.css" ?>" />
         <script src="/js/third_party/jquery-1.6.4.min.js"></script>
         <script src="/js/third_party/jquery.masonry.min.js"></script>
+        <script src="/js/third_party/highlight.pack.js"></script>
+        <script>
+            hljs.tabReplace = '    ';
+            hljs.initHighlightingOnLoad();
+        </script>
     </head>
     <body class="body">
+        <!--
+            Open content  Do whatever :)
+        -->
         <div class="hover_nav_bar">
             <div class="hover_nav_bar_header">Hover over me to see something happen</div>
             <div class="hover_nav_bar_content">
@@ -23,9 +32,13 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
         </div>
         <br/><br/>
         <br/>
-        <!--
-            Open content  Do whatever :)
-        -->
+        <?
+        echo "<div style='word-wrap: break-word;width:300px;'><pre><code>";
+        $x =  '&lt;?xml version="1.0"?&gt;
+&lt;response value="ok" xml:lang="en"&gt;  &lt;text&gt;Ok&lt;/text&gt;  &lt;comment html_allowed="true"/&gt;  &lt;ns1:description&gt;&lt;![CDATA[  CDATA is &lt;not&gt; magical.  ]]&gt;&lt;/ns1:description&gt;  &lt;a&gt;&lt;/a&gt; &lt;a/&gt;&lt;/response&gt;>';
+        echo $x;
+        echo "</code></pre>";
+        ?>
         <!--
              Close content :)
         -->

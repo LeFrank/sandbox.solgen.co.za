@@ -10,7 +10,7 @@ $colour_group = 0;
 $post = "";
 if(isset($_POST)) {
     $post = $_POST;
-    if($post["colour_group"]){
+    if($post["colour_group"]) {
         $colour_group = 1;
     }
     if($post["slider1_val"] != '') {
@@ -39,6 +39,7 @@ if(isset($_POST)) {
         <link rel="stylesheet" type="text/css" media="all" href="http://<?= $path_to_resources."/css/".$cur_folder.".css" ?>" />
         <link rel="stylesheet" type="text/css" media="all" href="./css/ui-darkness/jquery-ui-1.8.16.custom.css" />
         <script src="/js/third_party/jquery-1.6.4.min.js"></script>
+        <script src="/js/third_party/jquery.masonry.min.js"></script>
         <script src="./js/jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"></script>
         <script src="./js/default.js"></script>
         <style>
@@ -97,11 +98,12 @@ if(isset($_POST)) {
     </head>
     <body class="body">
         <div class="hover_nav_bar">
-            <div class="hover_nav_bar_header">Global Menu</div>
+            <div class="hover_nav_bar_header">projects</div>
             <div class="hover_nav_bar_content">
                 <? include_once(DOC_ROOT."/nav_unstyled.php"); ?>
             </div>
         </div>
+        <br/><br/>
         <br/>
         <!--
             Open content  Do whatever :)
@@ -120,24 +122,24 @@ if(isset($_POST)) {
         ?>
         <div id="msg" style="display:none;" ></div>
         <form name="palette_renderer" id="palette_renderer" action=""  method="POST" >
-        <div class="demo" style="width:90%;">
-            <div style="float:left;width:100px;" >Red : </div>
-            <input type ="input" id="slider1_val" name="slider1_val"  value="<? echo $slider1_range["min"] .",".$slider1_range["max"]; ?>" />&nbsp;&nbsp;&nbsp;
-            <div id="slider1" style="width:80%;float:right;"></div><br/>
+            <div class="demo" style="width:90%;">
+                <div style="float:left;width:100px;" >Red : </div>
+                <input type ="input" id="slider1_val" name="slider1_val"  value="<? echo $slider1_range["min"] .",".$slider1_range["max"]; ?>" />&nbsp;&nbsp;&nbsp;
+                <div id="slider1" style="width:80%;float:right;"></div><br/>
 
-            <div style="float:left;width:100px;" >Green : </div>
-            <input type ="input" id="slider2_val" name="slider2_val" value="<? echo $slider2_range["min"] .",".$slider2_range["max"]; ?>" />&nbsp;&nbsp;
-            <div id="slider2" style="width:80%;float:right;"></div><br/>
+                <div style="float:left;width:100px;" >Green : </div>
+                <input type ="input" id="slider2_val" name="slider2_val" value="<? echo $slider2_range["min"] .",".$slider2_range["max"]; ?>" />&nbsp;&nbsp;
+                <div id="slider2" style="width:80%;float:right;"></div><br/>
 
-            <div style="float:left;width:100px;" >Blue : </div>
-            <input type ="input" id="slider3_val" name="slider3_val" value="<? echo $slider3_range["min"] .",".$slider3_range["max"]; ?>"  />&nbsp;&nbsp;
-            <div id="slider3" style="width:80%;float:right;"></div><br/>
-            
-        </div><!-- End demo -->
-        <br/>
-        Group by Colour ?
-        <input type="checkbox" id="colour_group" name="colour_group"  <? echo ($colour_group)?"checked":""; ?> />
-        <br/>
+                <div style="float:left;width:100px;" >Blue : </div>
+                <input type ="input" id="slider3_val" name="slider3_val" value="<? echo $slider3_range["min"] .",".$slider3_range["max"]; ?>"  />&nbsp;&nbsp;
+                <div id="slider3" style="width:80%;float:right;"></div><br/>
+
+            </div><!-- End demo -->
+            <br/>
+            Group by Colour ?
+            <input type="checkbox" id="colour_group" name="colour_group"  <? echo ($colour_group)?"checked":""; ?> />
+            <br/>
             <input type="submit" id="render_rgb_palette" name="render_rgb_palette"  value="Render Palette" onclick="return validate_range_limits();" />
         </form>
         <br/>
@@ -158,7 +160,7 @@ if(isset($_POST)) {
             }
         }else {
             //evaluate post variables
-            if($colour_group){
+            if($colour_group) {
                 for($i = $slider1_range["min"];$i <= $slider1_range["max"];$i++) {
                     for($j = $slider2_range["min"] ;$j <= $slider2_range["max"];$j++) {
                         for($k = $slider3_range["min"];$k<= $slider3_range["min"];$k++) {
@@ -183,7 +185,7 @@ if(isset($_POST)) {
                     }
                 }
                 echo "<br/><br/>";
-            }else{
+            }else {
                 for($i = $slider1_range["min"];$i <= $slider1_range["max"];$i++) {
                     for($j = $slider2_range["min"] ;$j <= $slider2_range["max"];$j++) {
                         for($k = $slider3_range["min"];$k<= $slider3_range["min"];$k++) {
@@ -198,5 +200,14 @@ if(isset($_POST)) {
         <!--
              Close content :)
         -->
+        <script type="text/javascript" >
+            $(function(){
+                $('#nav_container').masonry({
+                    // options
+                    itemSelector : '#nav_cat_item',
+                    columnWidth : 240
+                });
+            });
+        </script>
     </body>
 </html>
