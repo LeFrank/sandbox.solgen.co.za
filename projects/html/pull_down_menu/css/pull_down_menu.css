@@ -1,28 +1,40 @@
+body{
+    background-color:#aaaaaa;
+    margin:0;
+    font-family: "Oswald","Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    color:#222;
+    text-shadow: 0 1px 0 #fff;
+    font-size:14px;
+    font-weight:100;
+    width:100%;
+    height:100%;
+}
 div.hover_nav_bar {
     position: absolute;
-    width: 100%;
-    height: 20px;
+    width: 98%;
     overflow: hidden;
     display: block;
-
+    margin-left:1%;
+    height: 30px;
 }
 div.hover_nav_bar:hover {
     position: absolute;
-    width: 99%;
+    width: 98%;
     height: 200px;
     overflow: hidden;
     z-index: 1000;
     border-radius:0px 0px 10px 10px;
     -moz-box-shadow: 5px 5px 5px  #888;
-     -webkit-box-shadow:5px 5px 5px #888;
-     -o-box-shadow: 5px 5px 5px  #888;
-     box-shadow: 5px 5px 5px  #888;
+    -webkit-box-shadow:5px 5px 5px #888;
+    -o-box-shadow: 5px 5px 5px  #888;
+    box-shadow: 5px 5px 5px  #888;
 }
 
-div.hover_nav_bar div {
-    width: 95%;
+
+.hover_nav_bar div {
+    /*width: 95%;*/
     border-radius:0px 0px 10px 10px;
-    /*height: 20px;*/
+    height: 30px;
     font-size: 20px;
     padding: 0px;
     position: absolute;
@@ -45,12 +57,16 @@ div.hover_nav_bar div.hover_nav_bar_header {
     z-index: 1000;
 }
 div.hover_nav_bar_header{
+    width:100%;
     border-radius:0px 0px 10px 10px;
 }
 
 div.hover_nav_bar_content{
     display:block;
-        border-radius:0px 0px 10px 10px;
+    width:100%;
+    height: 200px;
+background-color:rgb(126, 125, 125);
+    border-radius:10px 10px 10px 10px;
 }
 
 div.hover_nav_bar:hover div.hover_nav_bar_header {
@@ -62,12 +78,30 @@ div.hover_nav_bar:hover div.hover_nav_bar_header {
     top: -50px;
 }
 
-body{
-    background-color:#aaaaaa;
-    margin:0;
-}
 
 #nav_container{
     background-color:rgb(126, 125, 125);
+    height:auto;
 }
 
+#nav_cat_item{
+    border-radius:3px 3px;
+    width:200px;
+    margin:5px;
+    font-weight:bold;
+    font-size:16px;
+    float:left;
+}
+#nav_cat_item ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 3px;
+    float:left;
+}
+#nav_cat_item ul li{
+    list-style: none;
+    text-align: left;
+    text-indent: 15px;
+    font-weight:300;
+    font-size:14px;
+}
