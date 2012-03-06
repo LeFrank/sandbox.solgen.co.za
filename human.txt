@@ -1,0 +1,6 @@
+links : #f1b836
+meta data : #444444
+active data : #666666
+headings : #dddddd
+body text : #bbbbbb
+background colour : #191a1a
