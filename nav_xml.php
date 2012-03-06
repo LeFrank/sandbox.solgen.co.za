@@ -23,6 +23,10 @@ $navigation_xml = "<?xml version='1.0' standalone='yes'?>
             <project_category>
                 <name>html</name>
                 <path>/projects/html</path>
+                            <project>
+                    <name>canvas</name>
+                    <path>/projects/html/canvas</path>
+                </project>
                 <project>
                     <name>pull down menu</name>
                     <path>/projects/html/pull_down_menu</path>

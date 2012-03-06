@@ -11,32 +11,43 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <title>#title </title>
         <link rel="stylesheet" type="text/css" media="all" href="http://<?= $path_to_resources."/css/".$cur_folder.".css" ?>" />
+        <script src="/js/third_party/modernizr-latest.js"></script>
         <script src="/js/third_party/jquery-1.6.4.min.js"></script>
         <script src="/js/third_party/jquery.masonry.min.js"></script>
     </head>
     <body class="body">
-        <div class="hover_nav_bar">
-            <div class="hover_nav_bar_header">Hover over me to see something happen</div>
-            <div class="hover_nav_bar_content">
-                <? include_once(DOC_ROOT."/nav_unstyled.php"); ?>
-            </div>
-        </div>
-        <br/><br/>
-        <br/>
-        <!--
-            Open content  Do whatever :)
-        -->
-        <!--
-             Close content :)
-        -->
-        <script type="text/javascript" >
-            $(function(){
-                $('#nav_container').masonry({
-                    // options
-                    itemSelector : '#nav_cat_item',
-                    columnWidth : 240
-                });
-            });
-        </script>
+                <!--
+                    Open content  Do whatever :)
+                -->
+<div class="hover_nav_bar">
+	<div class="hover_nav_bar_header">Hover over me to see something happen</div>
+    <div class="hover_nav_bar_content">
+        <? include_once(DOC_ROOT."/nav_unstyled.php"); ?>
+    </div>
+</div>
+<br/><br/>
+<br/>
+                Special Chars go away - <code><?= htmlentities('<meta http-equiv="content-type" content="text/html; charset=utf-8">')?></code>
+                <script type="text/javascript" >
+                    $(function(){
+                          $('#nav_container').masonry({
+                            // options
+                            itemSelector : '#nav_cat_item',
+                            columnWidth : 240
+                          });
+                        });
+var frequency = .3;
+for (var i = 0; i < 32; ++i)
+{
+   red   = Math.sin(frequency*i + 0) * 127 + 128;
+   green = Math.sin(frequency*i + 2) * 127 + 128;
+   blue  = Math.sin(frequency*i + 4) * 127 + 128;
+
+   document.write( '<font color="' + RGB2Color(red,green,blue) + '">&#9608;</font>');
+}
+                </script>
+                <!--
+                     Close content :)
+                -->
     </body>
 </html>
