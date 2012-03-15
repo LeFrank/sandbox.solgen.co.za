@@ -23,6 +23,7 @@
                     <li><a href="./palette_renderer">Palette Renderer</a></li>
                     <li><a href="./project_crud">Project CRUD</a></li>
                     <li><a href="./Zipper">Zipper</a></li>
+                    <li><a href="./phpwebsocket">Web Socket</a></li>
                 </ul>
             </div>
             <div class="center_content">

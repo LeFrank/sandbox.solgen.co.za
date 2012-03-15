@@ -83,6 +83,10 @@ $navigation_xml = "<?xml version='1.0' standalone='yes'?>
                     <name>zipper</name>
                     <path>/projects/php/zipper</path>
                 </project>
+                <project>
+                    <name>Web Sockets</name>
+                    <path>/projects/php/phpwebsocket-read-only</path>
+                </project>
             </project_category>
             <project_category>
                 <name>wordpress</name>
