@@ -18,7 +18,7 @@ require_once("../../init.php");
         <div class="content_wrap">
             <div class="left_nav">
                 <ul>
-                    <li><a href='/'>back</a></li>
+                    <li><a href='/'>← back</a></li>
                     <li><a href='./highlight'>highlight</a></li>
                     <li><a href='./jquery_mobile'>jQuery Mobile</a></li>
                     <li><a href='./osm'>osm</a></li>
@@ -36,17 +36,16 @@ require_once("../../init.php");
                 <div class="ppy" id="ppy1">
                     <ul class="ppy-imglist">
                         <li>
-                            <a href="http://farm4.static.flickr.com/3461/3760102198_0e3de1eec3.jpg">
-                                <img src="http://farm4.static.flickr.com/3461/3760102198_0e3de1eec3_m.jpg" alt="" />
+                            <a href="/images/uploaded/original/2010/08/25/1282755515712.jpg">
+                                <img src="/images/uploaded/thumbnail/2010/08/25/1282755515712.jpg" alt="" />
                             </a>
                             <span class="ppy-extcaption">
-                                <strong>Eyes of a Holcocephala fusca Robber Fly</strong><br />shot by flickr member Thomas Shahan<br />
-                                <a href="http://www.flickr.com/photos/opoterser/3760102198/">View on flickr.com</a>
+                                <strong>Sparkles</strong><br />from the internets<br />
                             </span>
                         </li>
                         <li>
-                            <a href="http://farm2.static.flickr.com/1317/908814138_9fa713a687.jpg">
-                                <img src="http://farm2.static.flickr.com/1317/908814138_9fa713a687_m.jpg" alt="" />
+                            <a href="/images/uploaded/original/2010/08/25/1282758150954.jpg">
+                                <img src="/images/uploaded/thumbnail/2010/08/25/1282758150954.jpg" alt="" />
                             </a>
                             <span class="ppy-extcaption">
                                 <strong>Crocodile's eye</strong><br />shot by flickr member Tambako the Jaguar<br />
@@ -54,8 +53,8 @@ require_once("../../init.php");
                             </span>
                         </li>
                         <li>
-                            <a href="http://farm4.static.flickr.com/3357/3633927491_d8864d5235.jpg">
-                                <img src="http://farm4.static.flickr.com/3357/3633927491_d8864d5235_m.jpg" alt="" />
+                            <a href="/images/uploaded/original/2010/08/25/1282762601329.jpg">
+                                <img src="/images/uploaded/thumbnail/2010/08/25/1282762601329.jpg" alt="" />
                             </a>
                             <span class="ppy-extcaption">
                                 <strong>Daipeem</strong><br />shot by flickr member Furryscaly<br />
@@ -63,8 +62,8 @@ require_once("../../init.php");
                             </span>
                         </li>
                         <li>
-                            <a href="http://farm4.static.flickr.com/3335/3198858060_365ce0ba53.jpg">
-                                <img src="http://farm4.static.flickr.com/3335/3198858060_365ce0ba53_m.jpg" alt="" />
+                            <a href="/images/uploaded/original/2010/08/25/1282755719830.jpg">
+                                <img src="/images/uploaded/thumbnail/2010/08/25/1282755719830.jpg" alt="" />
                             </a>
                             <span class="ppy-extcaption">
                                 <strong>basiliscus plumifrons</strong><br />shot by flickr member Joachim S. Müller<br />
@@ -72,8 +71,8 @@ require_once("../../init.php");
                             </span>
                         </li>
                         <li>
-                            <a href="http://farm3.static.flickr.com/2597/4162969117_cbbc452a26.jpg">
-                                <img src="http://farm3.static.flickr.com/2597/4162969117_cbbc452a26_m.jpg" alt="" />
+                            <a href="/images/uploaded/original/2010/08/25/1282761721412.jpg">
+                                <img src="/images/uploaded/thumbnail/2010/08/25/1282761721412.jpg" alt="" />
                             </a>
                             <span class="ppy-extcaption">
                                 <strong>Eyes of Jumping spider</strong><br />shot by flickr member Lukjonis<br />

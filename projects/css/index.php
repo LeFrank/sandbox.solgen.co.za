@@ -15,12 +15,40 @@ $cur_folder = $cur_folder[count($cur_folder)-1];
         <script src="/js/third_party/modernizr-latest.js"></script>
         <script src="/js/third_party/jquery-1.6.4.min.js"></script>
         <script src="/js/default.js"></script>
+        <style>
+            #fire h1 {
+                text-align: center;
+                font-size: 50px; text-transform: uppercase;
+                color: #fff;
+                text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+            }
+        </style>
     </head>
     <body class="body">
         <div class="body_content">
                 <!--
                     Open content  Do whatever :)
                 -->
+                <h2>Text on fire</h2>
+                <div id="fire">
+                    <h1>just look at it, this text is emiting heat and smoke.</h1>
+                </div>
+                The above was achieved via text-shadow manipulation, shown below.Stolen from <a href="http://www.webhostingsecretrevealed.com/featured-articles/10-must-know-html5-tips-tricks-with-sample-codes/" title="html5 tips and tricks" >the people at webhostingsecretrevealed.com </a><br/>
+                <code>
+                <? highlight_string("#fire h1 {
+             text-align: center;
+             font-size: 50px; text-transform: uppercase;
+             color: #fff;
+             text-shadow: 0 0 20px #fefcc9,
+                                10px -10px 30px #feec85,
+                                -20px -20px 40px #ffae34,
+                                20px -40px 50px #ec760c,
+                                -20px -60px 60px #cd4606,
+                                0 -80px 70px #973716,
+                                10px -90px 80px #451b0e;
+             }");?>
+                </code>
+                <br/><br/>
                 <h2>Multi Collum using CSS3 - to split content into multi column format .e.g. newspaper and magazines.</h2>
 <pre>
     <code>
