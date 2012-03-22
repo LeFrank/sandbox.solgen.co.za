@@ -21,6 +21,7 @@ if ($error) exit($error);
      echo "Table exists";
  }
  echo "first clear the table";
+
  echo "Now to insert something.";
 
 ?>
