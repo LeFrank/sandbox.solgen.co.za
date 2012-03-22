@@ -19,6 +19,7 @@ require_once("../../init.php");
             <div class="left_nav">
                 <ul>
                     <li><a href='/'>← back</a></li>
+                    <li><a href='./ckeditor'>ckeditor</a></li>
                     <li><a href='./highlight'>highlight</a></li>
                     <li><a href='./jquery_mobile'>jQuery Mobile</a></li>
                     <li><a href='./osm'>osm</a></li>
