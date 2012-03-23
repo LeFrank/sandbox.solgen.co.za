@@ -25,14 +25,16 @@ require_once("../../init.php");
             </div>
             <div class="center_content">
                 <h2>HTML Projects</h2>
-                <h3>Meta Charset</h3>
+                <section>
+                    <h3>Meta Charset</h3>
                     Ever have weird characters show up on your web pages? <br/>
-                    I don't think your character encoding is correct try adding the meta tag below, to the head section of your pages/template.<br/>
+                    I don't think your character encoding is correct try adding the meta tag below, to the head section of your pages/template.<br/><br/>
 
-                <?= highlight_string('<meta http-equiv="Content-Type" content="text/html; charset=utf-8">' ,true); ?>
+                    <?= highlight_string('<meta http-equiv="Content-Type" content="text/html; charset="utf-8" />' ,true); ?>
+                </section>
             </div>
             <div class="right_hot_stuff">
-                Hot stuff and alerts go here
+                
             </div>
         </div>
         <div class="clearer" />
