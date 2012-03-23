@@ -55,5 +55,11 @@ function drawCanvasStuff(){
         context.stroke();
         context.fill();
         context.rotate(0.05);
+        
+        context.fillStyle = "rgb(200,0,0)";  
+        context.fillRect (210, 10, 55, 50);  
+  
+        context.fillStyle = "rgba(0, 0, 200, 0.5)";  
+        context.fillRect (230, 30, 55, 50);  
     }
 }

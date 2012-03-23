@@ -19,7 +19,7 @@
             </div>
             <div class="center_content">
                 <h3>Lets get our canvas on.</h3>
-                <canvas id="myDrawing" width="200" height="200">
+                <canvas id="myDrawing" width="300" height="200">
                     <p>Your browser doesn't support canvas.</p>
                 </canvas>
                 <script type="text/javascript" >
@@ -34,6 +34,5 @@
         <div class="footer">
             Footer goes here
         </div>
-
     </body>
 </html>
