@@ -1,14 +1,34 @@
+<?
+require_once("../../../init.php");
+?>
+<!DOCTYPE html>
 <html>
 <head>
-  <script src="processing-1.3.6.min.js"></script>
+<title>Js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" media="all"
+	href="/css/black_and_yellow.css" />
+<link href='http://fonts.googleapis.com/css?family=Sarina'
+	rel='stylesheet' type='text/css'>
+<script src="/js/third_party/jquery-1.6.4.min.js"></script>
+<script src="processing-1.3.6.min.js"></script>
 </head>
-<body><h1>processing-1.3.6.min.js</h1>
-<h2>Simple processing.js via JavaScript</h2>
-<p>Clock</p>
+<body>
+	<? include(DOC_ROOT."/header.php"); ?>
+	<div class="content_wrap">
+		<div class="left_nav">
+			<ul>
+				<li><a href='/'>← back</a></li>
+			</ul>
+		</div>
+		<div class="center_content">
+			<p>Clock</p>
 
-<p><canvas id="canvas1" width="200" height="200"></canvas></p>
+			<p>
+				<canvas id="canvas1" width="200" height="200"></canvas>
+			</p>
 
-<script id="script1" type="text/javascript">
+			<script id="script1" type="text/javascript">
 
 // Simple way to attach js code to the canvas is by using a function
 function sketchProc(processing) {
@@ -50,5 +70,14 @@ var canvas = document.getElementById("canvas1");
 var p = new Processing(canvas, sketchProc);
 // p.exit(); to detach it
 </script>
-</body>
-</html>
+
+</div>
+            <div class="right_hot_stuff">
+               Hot stuff and alerts go here, get pulled from xml cache
+            </div>
+        </div>
+        <div class="clearer" />
+    <? include(DOC_ROOT."/footer.php")?>
+
+    </body>
+ </html>

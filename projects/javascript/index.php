@@ -24,7 +24,10 @@ require_once("../../init.php");
                     <li><a href='./jquery_mobile'>jQuery Mobile</a></li>
                     <li><a href='./osm'>osm</a></li>
                     <li><a href='./popeye'>jQuery popeye</a></li>
-                    <li><a href='./processingjs'>Processing</a></li>
+                    <li><a href='./processingjs'>Processing</a>
+                    	<ul>
+                    		<li><a href='./processingjs/clock.php'>Clock</a></li>
+                    	</ul></li>
                 </ul>
             </div>
             <div class="center_content">
