@@ -31,6 +31,7 @@ require_once("../../init.php");
                     I don't think your character encoding is correct try adding the meta tag below, to the head section of your pages/template.<br/><br/>
 
                     <?= highlight_string('<meta http-equiv="Content-Type" content="text/html; charset="utf-8" />' ,true); ?>
+                    asdasdasdasd
                 </section>
             </div>
             <div class="right_hot_stuff">
@@ -39,6 +40,5 @@ require_once("../../init.php");
         </div>
         <div class="clearer" />
         <? include(DOC_ROOT."/footer.php")?>
-
     </body>
 </html>
